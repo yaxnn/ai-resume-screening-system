@@ -1,0 +1,38 @@
+﻿# .gitignore - AI Resume Screening System
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.class
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+
+# pytest cache and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# Output directory (generated artifacts)
+output/
+
+# Editor / OS junk
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+resumes/
+temp_resumes/
