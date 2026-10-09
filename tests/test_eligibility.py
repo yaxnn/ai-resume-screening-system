@@ -1,5 +1,5 @@
 """
-test_eligibility.py — Unit tests for src.eligibility (Phase 2).
+test_eligibility.py — Unit tests for src.eligibility .
 """
 
 from __future__ import annotations

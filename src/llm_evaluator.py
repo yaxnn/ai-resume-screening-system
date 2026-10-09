@@ -1,5 +1,5 @@
 """
-llm_evaluator.py — LLM Enrichment for AI Resume Screening System (Phase 4).
+llm_evaluator.py — LLM Enrichment for AI Resume Screening System .
 
 Uses Google Gen AI SDK to semantically evaluate candidate project depth,
 augmenting the deterministic rule-based scoring baseline.

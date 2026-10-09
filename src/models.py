@@ -1,9 +1,9 @@
 """
-models.py — Pydantic data models for the AI Resume Screening System (Phase 1).
+models.py — Pydantic data models for the AI Resume Screening System .
 
 Defines the Candidate model that represents all extracted information for a
 single resume.  No scoring or LLM fields are included here; those belong to
-later phases.
+other modules.
 """
 
 from __future__ import annotations

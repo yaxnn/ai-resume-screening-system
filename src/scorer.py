@@ -1,5 +1,5 @@
 """
-scorer.py — Deterministic rule-based scoring engine (Phase 3).
+scorer.py — Deterministic rule-based scoring engine .
 
 Calculates a 100-point score for eligible candidates based on:
 - AI/RAG Project Depth (40 pts)
@@ -41,7 +41,7 @@ class ScoringResult:
     project_summary: Optional[str] = None
     llm_evaluation_status: str = "disabled"
     
-    # Phase 5: GitHub Summaries
+    # : GitHub Summaries
     github_profile: Optional[str] = None
     github_activity_summary: Optional[str] = None
     github_repo_summary: Optional[str] = None

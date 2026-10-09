@@ -1,5 +1,5 @@
 """
-parser.py — Resume file discovery and text-extraction logic (Phase 1).
+parser.py — Resume file discovery and text-extraction logic .
 
 Responsibilities
 ----------------
@@ -12,7 +12,7 @@ Responsibilities
 * Avoid duplicate processing of the same file (by resolved absolute path).
 
 This module contains **no** scoring, LLM calls, GitHub API calls, or CLI
-logic — those belong to later phases or to ``main.py``.
+logic — those belong to other modules or to ``main.py``.
 """
 
 from __future__ import annotations

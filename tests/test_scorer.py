@@ -1,5 +1,5 @@
 """
-Tests for Phase 3 scoring logic.
+Tests for  scoring logic.
 """
 
 import pytest

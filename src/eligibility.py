@@ -1,5 +1,5 @@
 """
-eligibility.py — Deterministic eligibility filtering for SDE internship (Phase 2).
+eligibility.py — Deterministic eligibility filtering for SDE internship .
 
 Checks two mandatory criteria:
     1. **Python evidence** — the candidate demonstrates Python usage in skills,
@@ -300,7 +300,7 @@ def check_eligibility(candidate: Candidate) -> EligibilityResult:
     Parameters
     ----------
     candidate:
-        A parsed Candidate record from Phase 1.
+        A parsed Candidate record from .
 
     Returns
     -------
@@ -419,7 +419,7 @@ def check_all_eligibility(
     Parameters
     ----------
     candidates:
-        Parsed Candidate records from Phase 1.
+        Parsed Candidate records from .
 
     Returns
     -------

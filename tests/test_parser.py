@@ -1,5 +1,5 @@
 """
-test_parser.py — Unit tests for src.parser and src.models (Phase 1).
+test_parser.py — Unit tests for src.parser and src.models .
 
 Test coverage:
   - Successful PDF parsing (name, email, GitHub, skills, projects)

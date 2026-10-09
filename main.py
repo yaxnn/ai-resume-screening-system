@@ -1,7 +1,7 @@
 """
 main.py — Command-line entry point for the AI Resume Screening System.
 
-Phase 1: Discovers, parses, and reports on resumes found in a configurable
+: Discovers, parses, and reports on resumes found in a configurable
 input directory.  Results are printed to stdout and optionally saved as a
 JSON file in the output directory.
 
@@ -62,7 +62,7 @@ logger = logging.getLogger(__name__)
 def build_arg_parser() -> argparse.ArgumentParser:
     """Return the argument parser for the main entry point."""
     parser = argparse.ArgumentParser(
-        description="AI Resume Screening System — Phase 1: Parse & Extract",
+        description="AI Resume Screening System 
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
     parser.add_argument(
@@ -85,7 +85,7 @@ def build_arg_parser() -> argparse.ArgumentParser:
         "--use-llm",
         action="store_true",
         default=False,
-        help="Use LLM for Phase 4 semantic evaluation of candidates.",
+        help="Use LLM for  semantic evaluation of candidates.",
     )
     return parser
 
@@ -96,7 +96,7 @@ def build_arg_parser() -> argparse.ArgumentParser:
 
 
 def main(argv: list[str] | None = None) -> int:
-    """Run Phase 1-4: discover, parse, filter, and score all resumes."""
+    """Run : discover, parse, filter, and score all resumes."""
     args = build_arg_parser().parse_args(argv)
 
     resume_dir = Path(args.resume_dir)
@@ -106,7 +106,7 @@ def main(argv: list[str] | None = None) -> int:
     #  Banner                                                             #
     # ------------------------------------------------------------------ #
     print("\n" + "=" * 60)
-    print("  AI Resume Screening System — Phase 1-4")
+    print("  AI Resume Screening System 
     print("=" * 60)
     print(f"  Resume directory : {resume_dir.resolve()}")
     print(f"  Output directory : {output_dir.resolve()}")
@@ -135,7 +135,7 @@ def main(argv: list[str] | None = None) -> int:
         candidates_with_elig.append((cand, elig_result))
     
     # ------------------------------------------------------------------ #
-    #  Scoring & Ranking (Phase 3 & 4)                                    #
+    #  Scoring & Ranking ( & 4)                                    #
     # ------------------------------------------------------------------ #
     scored_results = score_and_rank_candidates(candidates_with_elig, use_llm=args.use_llm)
 
@@ -195,9 +195,9 @@ def main(argv: list[str] | None = None) -> int:
         output_dir.mkdir(parents=True, exist_ok=True)
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         
-        # Phase 2 export structure (backward compatibility)
+        #  export structure (backward compatibility)
         elig_export = []
-        # Phase 3 export structure
+        #  export structure
         score_export = []
 
         for cand, elig, scoring in scored_results:
@@ -216,17 +216,17 @@ def main(argv: list[str] | None = None) -> int:
             score_dict = {**base_info, "eligibility": elig.to_dict(), "scoring": scoring.to_dict()}
             score_export.append(score_dict)
 
-        # Save Phase 2
+        # Save 
         elig_path = output_dir / f"eligibility_results_{timestamp}.json"
         with open(elig_path, "w", encoding="utf-8") as fh:
             json.dump(elig_export, fh, indent=2, ensure_ascii=False)
-        print(f"💾  Phase 2 Eligibility results saved to: {elig_path}")
+        print(f"💾  : {elig_path}")
 
-        # Save Phase 3
+        # Save 
         score_path = output_dir / f"scoring_results_{timestamp}.json"
         with open(score_path, "w", encoding="utf-8") as fh:
             json.dump(score_export, fh, indent=2, ensure_ascii=False)
-        print(f"💾  Phase 3 Scoring results saved to: {score_path}")
+        print(f"💾  : {score_path}")
 
     return 1 if failures else 0
 

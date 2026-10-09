@@ -1,5 +1,5 @@
 """
-github_client.py — GitHub API Integration (Phase 5).
+github_client.py — GitHub API Integration .
 
 Fetches public repository and event data for candidates using the unauthenticated
 or authenticated public REST API. Implements in-run caching to avoid duplicate

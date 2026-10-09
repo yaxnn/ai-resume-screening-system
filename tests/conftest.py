@@ -1,5 +1,5 @@
 """
-conftest.py — Shared pytest fixtures for Phase 1 tests.
+conftest.py — Shared pytest fixtures for  tests.
 
 Fixtures create minimal but realistic test files (PDF and DOCX) on-the-fly
 using reportlab and python-docx so the test suite has no dependency on
